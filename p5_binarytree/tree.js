@@ -21,3 +21,10 @@ Tree.prototype.search = function(val) {
   let result = this.root.search(val);
   return result;
 }
+
+Tree.prototype.clicked = function() {
+  if(this.root != null) {
+    let tbdelete = this.root.deletethis(this.root);
+    return tbdelete;
+  }
+}
